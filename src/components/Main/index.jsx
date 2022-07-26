@@ -13,7 +13,7 @@ import { RiLinkedinBoxLine } from "react-icons/ri";
 
 export const Main = () => {
   return (
-    <HStack spacing={5} minH="100%">
+    <HStack spacing={5} h="100%">
       <Stack boxShadow="base" w="300px" h="300px">
         <Img />
       </Stack>
@@ -30,15 +30,7 @@ export const Main = () => {
             href="https://www.linkedin.com/in/matias-dominguez-b9b91a142/"
             isExternal
           >
-            <Button
-              leftIcon={<RiLinkedinBoxLine />}
-              bgColor="black"
-              color="white"
-              _hover={{ bg: "blackAlpha.900" }}
-              _active={{ bg: "blackAlpha.900" }}
-            >
-              Contact me
-            </Button>
+            <Button leftIcon={<RiLinkedinBoxLine />}>Contact me</Button>
           </Link>
           {/* <Button
             variant="outline"

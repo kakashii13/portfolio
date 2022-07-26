@@ -6,8 +6,30 @@ export const theme = extendTheme({
   },
   styles: {
     global: {
-      "html, #root, body": {
-        h: "100vh",
+      "html, #root, body": {},
+    },
+  },
+  components: {
+    Button: {
+      variants: {
+        solid: {
+          bg: "black",
+          color: "white",
+          _hover: {
+            bg: "blackAlpha.900",
+          },
+          _active: {
+            bg: "blackAlpha.900",
+          },
+        },
+        outline: {
+          _hover: {
+            bg: "gray.100",
+          },
+          _active: {
+            bg: "gray.100",
+          },
+        },
       },
     },
   },
