@@ -13,9 +13,9 @@ import todoThings from "../assets/Todothings.png";
 
 export const Proyects = () => {
   return (
-    <Stack h="100vh">
+    <Stack h="100vh" id="proyects" pt="40px" spacing={8}>
       <Heading>Proyects</Heading>
-      <HStack boxShadow="base" mt="20px" justifyContent="space-between">
+      <HStack boxShadow="base" justifyContent="space-between">
         <VStack p="10px" h="100%" justifyContent="space-between">
           <Heading as="h3" fontSize="24px">
             Things ToDo

@@ -1,9 +1,9 @@
 import { ChakraProvider, Container } from "@chakra-ui/react";
 import { theme } from "./theme";
 import { Home } from "./pages/Home";
-import "@fontsource/roboto-mono";
 import { Proyects } from "./pages/Proyects";
-import { Technologies } from "./pages/Technologies";
+import { Tech } from "./pages/Tech";
+import "@fontsource/roboto-mono";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Container maxW="5xl">
         <Home />
         <Proyects />
-        <Technologies />
+        <Tech />
       </Container>
     </ChakraProvider>
   );

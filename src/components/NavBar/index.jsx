@@ -1,5 +1,6 @@
 import { HStack, Text } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-scroll";
 
 export const NavBar = () => {
   return (
@@ -8,8 +9,17 @@ export const NavBar = () => {
         MD
       </Text>
       <HStack>
-        <Text>Home</Text>
-        <Text>Works</Text>
+        <Link>Home</Link>
+        <Link
+          activeClass="active"
+          to="proyects"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          Proyects
+        </Link>
       </HStack>
     </HStack>
   );
