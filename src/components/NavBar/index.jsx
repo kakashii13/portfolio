@@ -8,8 +8,22 @@ export const NavBar = () => {
       <Text fontWeight="bold" fontSize="20px">
         MD
       </Text>
-      <HStack>
-        <Link>Home</Link>
+      <HStack spacing={5}>
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <Text
+            cursor="pointer"
+            color="blackAlpha.800"
+            _hover={{ color: "black" }}
+          >
+            Home
+          </Text>
+        </Link>
         <Link
           activeClass="active"
           to="proyects"
@@ -18,7 +32,13 @@ export const NavBar = () => {
           offset={50}
           duration={500}
         >
-          Proyects
+          <Text
+            cursor="pointer"
+            color="blackAlpha.800"
+            _hover={{ color: "black" }}
+          >
+            Proyects
+          </Text>
         </Link>
       </HStack>
     </HStack>

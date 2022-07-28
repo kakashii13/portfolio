@@ -10,21 +10,23 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { RiLinkedinBoxLine } from "react-icons/ri";
+import test from "../../assets/test.jpeg";
 
 export const Main = () => {
   return (
-    <HStack spacing={5} h="100%">
-      <Stack boxShadow="base" w="300px" h="300px">
-        <Img />
+    <VStack h="100%" spacing={10}>
+      <Stack
+        boxShadow="base"
+        w="300px"
+        h="300px"
+        border="1px solid black"
+        p="10px"
+      >
+        <Img src={test} />
       </Stack>
-      <VStack alignItems="start" maxW="500px">
+      <VStack alignItems="center" maxW="500px" spacing={5}>
         <Heading>Hi, I'm Matias.</Heading>
-        <Text>
-          I'm a Frontend Developer with JS adipisicing elit. Quia magni
-          explicabo commodi nulla amet quam, labore fuga inventore provident
-          accusamus aliquid rerum. Nisi debitis cumque suscipit doloremque eius
-          assumenda deserunt.
-        </Text>
+        <Text>Frontend Developer with JS 💛</Text>
         <HStack>
           <Link
             href="https://www.linkedin.com/in/matias-dominguez-b9b91a142/"
@@ -42,6 +44,6 @@ export const Main = () => {
           </Button> */}
         </HStack>
       </VStack>
-    </HStack>
+    </VStack>
   );
 };

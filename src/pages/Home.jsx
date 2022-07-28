@@ -7,14 +7,14 @@ import { Link } from "react-scroll";
 
 export const Home = () => {
   return (
-    <Stack h="100vh" position="relative">
+    <Stack h="100vh" position="relative" id="home">
       <NavBar />
       <Main />
       <Link
         activeClass="active"
-        to="proyects"
-        spy={true}
+        to="tech"
         smooth={true}
+        spy={true}
         offset={50}
         duration={500}
       >
@@ -26,7 +26,7 @@ export const Home = () => {
           bg="black"
           position="absolute"
           bottom="2"
-          left="50%"
+          left="49%"
           borderRadius="10px"
           cursor="pointer"
         />
