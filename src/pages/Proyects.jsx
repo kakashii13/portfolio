@@ -28,7 +28,7 @@ const PROYECTS_DEFAULT = [
 
 export const Proyects = () => {
   return (
-    <Stack h="1000px" id="proyects" p="40px" spacing={10}>
+    <Stack minH="1000px" id="proyects" p="40px" spacing={10}>
       <Heading textAlign="center">Proyects ( )</Heading>
       {PROYECTS_DEFAULT.map((proyect) => (
         <ProyectCard key={proyect.id} {...proyect} />

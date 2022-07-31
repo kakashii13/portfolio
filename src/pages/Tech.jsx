@@ -16,7 +16,7 @@ const ICONS = [
 
 export const Tech = () => {
   return (
-    <Stack minH="400px" pt="50px" spacing={10} id="tech">
+    <Stack minH="400px" py="100px" spacing={10} id="tech">
       <Heading textAlign="center">Tech ( )</Heading>
       <Text textAlign="center">I use this tech for create my websites</Text>
       <Grid

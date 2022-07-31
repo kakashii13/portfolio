@@ -3,7 +3,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <VStack h="300px" alignItems="center" spacing={10} id="about">
+    <VStack minH="300px" py="100px" alignItems="center" spacing={10} id="about">
       <Heading>About me ( )</Heading>
       <Text maxW="500px" textAlign="center">
         I'm Matias, and I'm 26 years old. I'm a self-taught frontend developer
