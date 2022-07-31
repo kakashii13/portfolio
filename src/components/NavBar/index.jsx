@@ -1,5 +1,4 @@
 import { HStack, Text } from "@chakra-ui/react";
-import React from "react";
 import { Link } from "react-scroll";
 
 export const NavBar = () => {
@@ -38,6 +37,22 @@ export const NavBar = () => {
             _hover={{ color: "black" }}
           >
             Proyects
+          </Text>
+        </Link>
+        <Link
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          <Text
+            cursor="pointer"
+            color="blackAlpha.800"
+            _hover={{ color: "black" }}
+          >
+            About
           </Text>
         </Link>
       </HStack>

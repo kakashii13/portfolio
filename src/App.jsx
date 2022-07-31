@@ -5,6 +5,7 @@ import { Proyects } from "./pages/Proyects";
 import { Tech } from "./pages/Tech";
 import "@fontsource/roboto-mono";
 import { About } from "./pages/About";
+import { Footer } from "./pages/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Tech />
         <Proyects />
         <About />
+        <Footer />
       </Container>
     </ChakraProvider>
   );

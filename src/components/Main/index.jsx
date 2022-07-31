@@ -1,7 +1,9 @@
 import {
   Button,
+  chakra,
   Heading,
   HStack,
+  Icon,
   Img,
   Link,
   Stack,
@@ -9,41 +11,64 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
-import { RiLinkedinBoxLine } from "react-icons/ri";
-import test from "../../assets/test.jpeg";
+import { RiArrowDownSLine, RiLinkedinBoxLine } from "react-icons/ri";
+import me from "../../assets/me.jpeg";
+import { Link as LinkSmooth } from "react-scroll";
+import { isValidMotionProp, motion } from "framer-motion";
+import { FaReact } from "react-icons/fa";
+
+const ButtonBox = chakra(motion.div, {
+  shouldForwardProp: (prop) => isValidMotionProp(prop) || prop === "children",
+});
 
 export const Main = () => {
   return (
     <VStack h="100%" spacing={10}>
       <Stack
         boxShadow="base"
-        w="300px"
-        h="300px"
+        maxW="400px"
+        maxH="400px"
         border="1px solid black"
         p="10px"
       >
-        <Img src={test} />
+        <Img src={me} />
       </Stack>
-      <VStack alignItems="center" maxW="500px" spacing={5}>
+      <VStack alignItems="center" maxW="auto" spacing={5} textAlign="center">
         <Heading>Hi, I'm Matias.</Heading>
-        <Text>Frontend Developer with JS 💛</Text>
         <HStack>
-          <Link
-            href="https://www.linkedin.com/in/matias-dominguez-b9b91a142/"
-            isExternal
-          >
-            <Button leftIcon={<RiLinkedinBoxLine />}>Contact me</Button>
-          </Link>
-          {/* <Button
-            variant="outline"
-            color="blackAlpha.700"
-            _hover={{ bg: "blackAlpha.50" }}
-            _active={{ bg: "none" }}
-          >
-            Check my work
-          </Button> */}
+          <Text>Frontend Developer with React</Text>
+          <Icon as={FaReact} color="#61dbfb" />
         </HStack>
+        <Link
+          href="https://www.linkedin.com/in/matias-dominguez-b9b91a142/"
+          isExternal
+        >
+          <Button leftIcon={<RiLinkedinBoxLine />}>Contact me</Button>
+        </Link>
       </VStack>
+      <ButtonBox
+        animate={{ y: [10, 30, 10] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        <LinkSmooth
+          activeClass="active"
+          to="tech"
+          smooth={true}
+          spy={true}
+          offset={50}
+          duration={500}
+        >
+          <Icon
+            as={RiArrowDownSLine}
+            h="30px"
+            w="30px"
+            color="white"
+            bg="black"
+            borderRadius="10px"
+            cursor="pointer"
+          />
+        </LinkSmooth>
+      </ButtonBox>
     </VStack>
   );
 };
