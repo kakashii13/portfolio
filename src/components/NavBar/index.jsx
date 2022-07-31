@@ -25,7 +25,7 @@ export const NavBar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="proyects"
+          to="projects"
           spy={true}
           smooth={true}
           offset={50}
@@ -36,7 +36,7 @@ export const NavBar = () => {
             color="blackAlpha.800"
             _hover={{ color: "black" }}
           >
-            Proyects
+            Projects
           </Text>
         </Link>
         <Link

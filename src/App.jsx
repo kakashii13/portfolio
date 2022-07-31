@@ -1,11 +1,11 @@
 import { ChakraProvider, Container } from "@chakra-ui/react";
 import { theme } from "./theme";
 import { Home } from "./pages/Home";
-import { Proyects } from "./pages/Proyects";
+import { Projects } from "./pages/Projects";
 import { Tech } from "./pages/Tech";
-import "@fontsource/roboto-mono";
 import { About } from "./pages/About";
 import { Footer } from "./pages/Footer";
+import "@fontsource/roboto-mono";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <Container maxW="5xl">
         <Home />
         <Tech />
-        <Proyects />
+        <Projects />
         <About />
         <Footer />
       </Container>

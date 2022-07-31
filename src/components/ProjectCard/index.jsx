@@ -9,9 +9,8 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import React from "react";
 
-export const ProyectCard = ({
+export const ProjectCard = ({
   title,
   content,
   badges,
@@ -27,7 +26,7 @@ export const ProyectCard = ({
       p="10px"
     >
       <VStack p="10px" h="100%" justifyContent="space-between" spacing={10}>
-        <Heading as="h3" fontSize="24px">
+        <Heading as="h3" fontSize="24px" textAlign="center">
           {title}
         </Heading>
         <Text textAlign="center" w={["auto", "400px"]}>

@@ -23,7 +23,7 @@ const ButtonBox = chakra(motion.div, {
 
 export const Main = () => {
   return (
-    <VStack h="100%" spacing={10}>
+    <VStack minH="100%" spacing={10}>
       <Stack
         boxShadow="base"
         maxW="400px"

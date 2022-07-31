@@ -2,9 +2,9 @@ import { Button, Heading, HStack, Link, Stack } from "@chakra-ui/react";
 import React from "react";
 import hooker from "../assets/hooker.png";
 import todoThings from "../assets/Todothings.png";
-import { ProyectCard } from "../components/ProyectCard";
+import { ProjectCard } from "../components/ProjectCard";
 
-const PROYECTS_DEFAULT = [
+const PROJECTS_DEFAULT = [
   {
     id: 0,
     title: "Things ToDos",
@@ -26,12 +26,12 @@ const PROYECTS_DEFAULT = [
   },
 ];
 
-export const Proyects = () => {
+export const Projects = () => {
   return (
-    <Stack minH="1000px" id="proyects" p="40px" spacing={10}>
-      <Heading textAlign="center">Proyects ( )</Heading>
-      {PROYECTS_DEFAULT.map((proyect) => (
-        <ProyectCard key={proyect.id} {...proyect} />
+    <Stack minH="1000px" id="projects" p="40px" spacing={10}>
+      <Heading textAlign="center">Projects ( )</Heading>
+      {PROJECTS_DEFAULT.map((project) => (
+        <ProjectCard key={project.id} {...project} />
       ))}
       <HStack justifyContent="center">
         <Link href="https://github.com/kakashii13" isExternal>
