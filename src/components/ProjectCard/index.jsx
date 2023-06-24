@@ -24,6 +24,8 @@ export const ProjectCard = ({
       flexDirection={["column", "column", "row"]}
       borderRadius="10px"
       p="10px"
+      border="1px solid"
+      borderColor="gray.400"
     >
       <VStack p="10px" h="100%" justifyContent="space-between" spacing={10}>
         <Heading as="h3" fontSize="24px" textAlign="center">
@@ -34,7 +36,9 @@ export const ProjectCard = ({
         </Text>
         <HStack>
           {badges.map((badge) => (
-            <Badge key={badge}>{badge}</Badge>
+            <Badge key={badge} bg="gray.300">
+              {badge}
+            </Badge>
           ))}
         </HStack>
         <HStack>
@@ -46,8 +50,8 @@ export const ProjectCard = ({
           </Link>
         </HStack>
       </VStack>
-      <Link href={linkDeploy} isExternal maxW="auto ">
-        <Image src={img} borderRadius="10px" />
+      <Link href={linkDeploy} isExternal maxW="auto">
+        <Image src={img} borderRadius="10px" maxH="400px" w={["500px"]} />
       </Link>
     </Stack>
   );

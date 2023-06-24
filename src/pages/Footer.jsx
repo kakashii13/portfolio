@@ -12,7 +12,7 @@ export const Footer = () => {
           href="https://www.linkedin.com/in/matias-dominguez-b9b91a142/"
           isExternal
         >
-          <Button>LinkedIn</Button>
+          <Button colorScheme="">LinkedIn</Button>
         </Link>
       </HStack>
     </VStack>

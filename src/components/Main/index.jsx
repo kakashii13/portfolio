@@ -15,7 +15,6 @@ import { RiArrowDownSLine, RiLinkedinBoxLine } from "react-icons/ri";
 import me from "../../assets/me.jpeg";
 import { Link as LinkSmooth } from "react-scroll";
 import { isValidMotionProp, motion } from "framer-motion";
-import { FaReact } from "react-icons/fa";
 
 const ButtonBox = chakra(motion.div, {
   shouldForwardProp: (prop) => isValidMotionProp(prop) || prop === "children",
@@ -30,14 +29,14 @@ export const Main = () => {
         maxH="400px"
         border="1px solid black"
         p="10px"
+        borderRadius="4px"
       >
-        <Img src={me} />
+        <Img src={me} borderRadius="4px" />
       </Stack>
       <VStack alignItems="center" maxW="auto" spacing={5} textAlign="center">
         <Heading>Hi, I'm Matias.</Heading>
         <HStack>
-          <Text>Frontend Developer with React</Text>
-          <Icon as={FaReact} color="#61dbfb" />
+          <Text>Fullstack developer</Text>
         </HStack>
         <Link
           href="https://www.linkedin.com/in/matias-dominguez-b9b91a142/"
@@ -47,7 +46,7 @@ export const Main = () => {
         </Link>
       </VStack>
       <ButtonBox
-        animate={{ y: [10, 30, 10] }}
+        animate={{ y: [10, 20, 10] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
         <LinkSmooth
