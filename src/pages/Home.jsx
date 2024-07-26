@@ -7,7 +7,7 @@ import { Footer } from "../components/Footer";
 
 export const Home = () => {
   return (
-    <Stack h="100vh" position="relative">
+    <Stack h="100vh">
       <Presentation />
       <HStack justifyContent="space-around" alignItems="start">
         <VStack alignItems="start">

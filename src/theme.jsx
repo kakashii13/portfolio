@@ -1,10 +1,13 @@
 import { extendTheme } from "@chakra-ui/react";
-import "@fontsource/courier-prime";
 
 export const theme = extendTheme({
+  config: {
+    initialColorMode: "dark",
+    useSystemColorMode: false,
+  },
   fonts: {
-    body: `"Courier Prime", "monospace"`,
-    heading: `"Courier Prime", "monospace"`,
+    body: `"Roboto Mono", "sans-serif"`,
+    heading: `"Roboto Mono", "sans-serif"`,
   },
   styles: {
     global: {
