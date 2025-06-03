@@ -18,14 +18,19 @@ export const Projects = () => {
           href={project.link}
           isExternal
           textDecoration="none!important"
+          my="10px"
         >
           <Text
             cursor="pointer"
             _hover={{
               color: "whiteAlpha.600",
             }}
+            fontSize="lg"
           >
-            - {project.title}
+            {project.title}
+          </Text>
+          <Text fontSize="sm" color="gray.500">
+            {project.description}
           </Text>
         </Link>
       ))}
