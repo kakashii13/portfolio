@@ -1,34 +1,14 @@
-import React from "react";
-import { Heading, Stack, VStack, Box, Divider, Text } from "@chakra-ui/react";
-import { Presentation } from "../components/Presentation";
+import { Heading, Stack, VStack, Divider } from "@chakra-ui/react";
+import { Header } from "../components/Header";
 import { Projects } from "../components/Projects";
 import { Socials } from "../components/Socials";
-
+import { AboutMe } from "../components/AboutMe";
 export const Home = () => {
   return (
     <Stack h="100vh">
-      <Presentation />
+      <Header />
       <VStack justifyContent="space-around" alignItems="start" spacing={10}>
-        <Box
-          fontSize="lg"
-          textAlign="justify"
-          display="flex"
-          flexDirection="column"
-          gap={10}
-        >
-          <Text>
-            Hey! I'm Matias, a{" "}
-            <Text fontWeight="bold" as="span">
-              software developer
-            </Text>{" "}
-            from Argentina. I'm currently studying at UAI and learning more
-            about how to build cool and useful software.{" "}
-          </Text>
-          <Text>
-            I’m into coding, leadership stuff, and plants (yes, really). I learn
-            fast, love solving problems, and I'm always up for a new challenge.
-          </Text>
-        </Box>
+        <AboutMe />
         <Divider />
         <VStack alignItems="start">
           <Heading size="lg">Projects</Heading>

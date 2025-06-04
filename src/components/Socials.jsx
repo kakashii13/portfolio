@@ -14,7 +14,7 @@ const SOCIALS = [
 
 export const Socials = () => {
   return (
-    <VStack spacing={5} alignItems="start">
+    <VStack spacing={3} alignItems="start">
       {SOCIALS.map((social) => (
         <Link href={social.url} isExternal key={social.name}>
           <Text>{social.name}</Text>
